@@ -1,0 +1,47 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		int n=obj.nextInt();
+		int m=100;
+		System.out.printf("Total Subjects is %d\n",n);
+		System.out.printf("Each Subject carries %d\n",m);
+		int totalmarks=0;
+		for(int i=1;i<=n;i++){
+		    System.out.printf("enter the subject marks %d: ",i);
+		    int marks=obj.nextInt();
+		   totalmarks=totalmarks+marks;
+		}
+		System.out.printf("The Totalmarks is :%d\n",totalmarks);
+		float average;
+		average=(float)totalmarks/n;
+		System.out.printf("The average is :%.2f\n",average);
+		if(average>=91 && average<=100){
+		    System.out.printf("The Grade is :O\n");
+		}
+		if(average>=81 && average<=90){
+		    System.out.printf("The Grade is :A+\n");
+		}
+		if(average>=71 && average<=80){
+		    System.out.printf("The Grade is :A\n");
+		}
+		if(average>=61 && average<=70){
+		    System.out.printf("The Grade is :B+\n");
+		}
+		if(average>=51 && average<=60){
+		    System.out.printf("The Grade is :B\n");
+		}
+		if(average>=41 && average<=50){
+		    System.out.printf("The Grade is :C\n");
+		}
+		if(average>=35 && average<=40){
+		    System.out.printf("The Grade is :S\n");
+		}
+		if(average<35){
+		    System.out.printf("The Grade is :Fail\n");
+		}
+		
+		
+	}
+}
